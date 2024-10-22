@@ -1,0 +1,669 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+    font-size: 28.4px;
+}
+
+header .logo span {
+    color: var(--pink);
+}
+
+header .navbar {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header .navbar a {
+    font-size: 24.4px;
+    padding: 0 1.5rem;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+    color: var(--pink);
+}
+
+header .icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header .icons i {
+    font-size: 28.1px;
+    color: #858b0abb;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+header .icons i:hover {
+    color: var(#ffa600);
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 50%;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+    font-size: 24.4px;
+}
+
+header #toggler {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 60%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        margin-left: 0;
+        right: 0;
+        background: #eee;
+        border-top: 1rem solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    header #toggler:checked ~ .navbar {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navbar a {
+        padding: 3rem;
+        font-size: 24.4px;
+        display: block;
+    }
+}
+
+.title {
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+
+.text {
+    flex: 1;
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ae7a47;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form fieldset {
+    border: 1px dashed snow;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #91491a;
+}
+
+form legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid snow;
+    border-radius: 5px;
+}
+
+form button {
+    cursor: pointer;
+    background-color: #91491a;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #740005;
+}
+
+.circular-image {
+    text-align: center;
+}
+
+.circular-image img {
+    border-radius: 60%;
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #b88654a4;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.centralize-link {
+    display: block;
+    text-align: center;
+    color: #ff69b4;
+    font-size: 18px;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+.centralize-link:hover {
+    color: #ff1493;
+    text-decoration: underline;
+}
+
+.centralize-text {
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.centralize-text:hover {
+    color: #ff1493;
+}
+
+.logo {
+    width: 250px;
+    animation: spin 2s;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    border-bottom: 2px solid #dcdcdc;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #c0392b;
+    border-bottom: 2px solid #c0392b;
+}
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.menu-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-section p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pizza-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pizza-item img {
+    max-width: 100%;
+    width: 100%; /* Define a largura máxima para todas as imagens */
+    height: 300px; /* Define uma altura fixa */
+    object-fit: cover; /* Faz com que a imagem se ajuste ao tamanho do contêiner, cortando se necessário */
+    border-radius: 8px;
+}
+
+.pizza-item h3 {
+    font-size: 1.5em;
+    color: #c0392b;
+    margin: 15px 0;
+}
+
+.pizza-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #807e2a; /* Hover color */
+}
+
+.image img {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.text p {
+    font-size: 1.2em;
+    color: #666;
+}
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+    .text h1 {
+        font-size: 2em;
+    }
+
+    .text p {
+        font-size: 1em;
+    }
+}
+a {
+    margin: 20px 0; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center; /* Centraliza o grid das imagens */
+    margin-top: 20px;
+}
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+header nav .icons a {
+    text-decoration: none;
+    margin-left: 8px;
+}
+.casas-section h2 {
+    font-family: 'Times New Roman', serif;
+}
+.casas-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.casas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.casa {
+    width: 45%;
+}
+
+
+.casa h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #8b0000;
+}
+
+.casa p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.pedido {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.btn-pedido {
+    background-color: #8b0000;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.btn-pedido:hover {
+    background-color: #a52a2a;
+}
+
+* {
+    outline: none;
+    text-transform: capitalize;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 180px;
+    position: relative;
+}
+
+header .logo {
+    font-size: 28.4px;
+    font-weight: bolder;
+    color: #333;
+}
+
+header nav {
+    display: flex;
+}
+
+header .icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+header .icons a {
+    font-size: 24.4px;
+    color: #666;
+    font-weight: bold;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.container img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    filter: brightness(70%);
+}
+
+.text h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.casas-section {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.casas-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.casas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.casa {
+    width: 45%;
+    text-align: left;
+}
+
+.casa img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.casa h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #8b0000;
+}
+
+.casa p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .casas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .casa {
+        width: 80%;
+    }
+}
+
+/*adicionar ao carrinho*/
+
+.pizza-item button {
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pizza-item button:hover {
+    background-color: #e74c3c;
+}
+
+/*página do carrinho*/
+
+.cart-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.cart-table td {
+    color: #666;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.cart-summary h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.finalize-order {
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.finalize-order:hover {
+    background-color: #a52a2a;
+}
+
+.remove-item {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: #e74c3c;
+}

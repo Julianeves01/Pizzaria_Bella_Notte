@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="assets/style.index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Pizzaria Bella Notte</a>
+        <img class="logo" src="imagens/icone.png" alt="logo Pizzaria" />
+        <nav>
+            <div class="icons">
+                <i class="fa-solid fa-house"></i> <a href="index.html">Home</a>
+                <i class="fa-solid fa-circle-info"></i> <a href="menu.html">Cardápio</a>
+                <i class="fa-solid fa-cart-shopping"></i> <a href="carrinho.html">Carrinho</a>
+                <i class="fa-solid fa-phone"></i> <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-section">
+            <h1>Carrinho de Compras</h1>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pizza Calabresa</td>
+                        <td>2</td>
+                        <td>R$ 28,00</td>
+                        <td>R$ 56,00</td>
+                        <td><button class="remove-item">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>Refrigerante Coca-Cola</td>
+                        <td>1</td>
+                        <td>R$ 5,00</td>
+                        <td>R$ 5,00</td>
+                        <td><button class="remove-item">Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <h3>Total: R$ 61,00</h3>
+                <button class="finalize-order">Finalizar Pedido</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Author: Julia Neves & Ana Julia</p>
+        <p><a href="mailto:hege@example.com">julia.s.neves6@aluno.senai.br</a></p>
+        <p><a href="mailto:hege@example.com">ana.demattei@aluno.senai.br</a></p>
+        <p>&copy; 2024 Pizzaria Bella Itália. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
