@@ -11,5 +11,5 @@ Bem-vindo ao repositório do site oficial da Pizzaria Bella Notte! Este projeto 
 
 👩‍💻| Como visualizar o site
 
-O site está disponível online através do GitHub Pages. Acesse o link abaixo para visitar:
+O site está disponível online através do Vercel. Acesse o link abaixo para visitar:
 (https://pizzaria-bella-notte.vercel.app/)
